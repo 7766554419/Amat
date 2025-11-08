@@ -1,4 +1,4 @@
-import { Heart, ShoppingBag, Users, Globe as GlobeIcon, Award, Sparkles, Globe } from "lucide-react";
+import { Heart, ShoppingBag, Users, Award, Sparkles, Globe } from "lucide-react";
 import Link from "next/link";
 
 export default function AboutPage() {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Great_Vibes } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 const greatVibes = Great_Vibes({
   weight: '400',
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased ${greatVibes.variable}`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
