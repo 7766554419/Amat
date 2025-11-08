@@ -80,7 +80,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
           <div className="prose prose-lg text-gray-600 space-y-4">
             <p>
-              stuffwhenIsleep was born from a deep love for Peruvian culture and a passion for providing 
+              Cloud Nine Baby was born from a deep love for Peruvian culture and a passion for providing 
               the highest quality baby clothes to families around the world. Our journey began when we 
               discovered the incredible craftsmanship of Peruvian artisans who have been creating beautiful 
               textiles for generations.
