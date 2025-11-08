@@ -1,4 +1,4 @@
-import { Heart, ShoppingBag, Filter } from "lucide-react";
+import { Heart, ShoppingBag, Filter, Globe } from "lucide-react";
 import Link from "next/link";
 
 const products = [
@@ -46,10 +46,29 @@ export default function ShopPage() {
                 Contact
               </Link>
             </div>
-            <button className="flex items-center gap-2 text-gray-700 hover:text-pink-600 transition">
-              <ShoppingBag className="w-5 h-5" />
-              <span className="hidden md:inline">Cart (0)</span>
-            </button>
+            <div className="flex items-center gap-4">
+              <div className="relative group">
+                <button className="flex items-center gap-2 text-gray-700 hover:text-pink-600 transition">
+                  <Globe className="w-5 h-5" />
+                  <span className="hidden md:inline">EN</span>
+                </button>
+                <div className="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                  <button className="w-full px-4 py-2 text-left hover:bg-pink-50 rounded-t-lg transition">
+                    🇬🇧 English
+                  </button>
+                  <button className="w-full px-4 py-2 text-left hover:bg-pink-50 transition">
+                    🇫🇷 Français
+                  </button>
+                  <button className="w-full px-4 py-2 text-left hover:bg-pink-50 rounded-b-lg transition">
+                    🇪🇸 Español
+                  </button>
+                </div>
+              </div>
+              <button className="flex items-center gap-2 text-gray-700 hover:text-pink-600 transition">
+                <ShoppingBag className="w-5 h-5" />
+                <span className="hidden md:inline">Cart (0)</span>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
