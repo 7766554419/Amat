@@ -1,6 +1,6 @@
-# stuffwhenIsleep
+# Cloud Nine Baby
 
-A modern, fast, and beautiful website built with Next.js, React, and TailwindCSS.
+A modern, beautiful e-commerce website for authentic Peruvian baby clothes, built with Next.js, React, and TailwindCSS.
 
 ## 🚀 Getting Started
 

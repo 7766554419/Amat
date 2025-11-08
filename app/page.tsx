@@ -11,7 +11,7 @@ export default function Home() {
             <Link href="/" className="flex items-center gap-2">
               <Heart className="w-6 h-6 text-pink-600" fill="currentColor" />
               <span className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                stuffwhenIsleep
+                Cloud Nine Baby
               </span>
             </Link>
             <div className="hidden md:flex gap-8">
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              STUFF WHEN I SLEEP
+              CLOUD NINE BABY
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-8">
               A collection to make you feel like a baby
@@ -156,7 +156,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Heart className="w-6 h-6 text-pink-600" fill="currentColor" />
-                <span className="font-bold text-gray-900">stuffwhenIsleep</span>
+                <span className="font-bold text-gray-900">Cloud Nine Baby</span>
               </div>
               <p className="text-gray-600">Authentic Peruvian baby clothes crafted with love</p>
             </div>
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-200 pt-8 text-center text-gray-600">
-            <p>© 2025 stuffwhenIsleep. All rights reserved. Handcrafted in Peru with ❤️</p>
+            <p>© 2025 Cloud Nine Baby. All rights reserved. Handcrafted in Peru with ❤️</p>
           </div>
         </div>
       </footer>
