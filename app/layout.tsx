@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Great_Vibes } from "next/font/google";
 import "./globals.css";
+
+const greatVibes = Great_Vibes({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-great-vibes',
+});
 
 export const metadata: Metadata = {
   title: "Cloud Nine Baby - Authentic Peruvian Baby Clothes",
@@ -14,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`antialiased ${greatVibes.variable}`}>
         {children}
       </body>
     </html>

@@ -10,7 +10,7 @@ export default function AboutPage() {
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center gap-2">
               <Heart className="w-6 h-6 text-pink-600" fill="currentColor" />
-              <span className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-3xl font-script bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
                 Cloud Nine Baby
               </span>
             </Link>

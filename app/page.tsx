@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center gap-2">
               <Heart className="w-6 h-6 text-pink-600" fill="currentColor" />
-              <span className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-3xl font-script bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
                 Cloud Nine Baby
               </span>
             </Link>
@@ -46,8 +46,8 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-r from-pink-100 via-purple-100 to-pink-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              CLOUD NINE BABY
+            <h1 className="text-6xl md:text-8xl font-script mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Cloud Nine Baby
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-8">
               A collection to make you feel like a baby
@@ -156,7 +156,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Heart className="w-6 h-6 text-pink-600" fill="currentColor" />
-                <span className="font-bold text-gray-900">Cloud Nine Baby</span>
+                <span className="text-2xl font-script text-gray-900">Cloud Nine Baby</span>
               </div>
               <p className="text-gray-600">Authentic Peruvian baby clothes crafted with love</p>
             </div>
