@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Sweaters", "Accessories", "Blankets", "Ponchos", "Footwear", "Sets", "Dresses"]}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["Book Recommendations", "Culture", "Parenting", "Products"]}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content/pages/home.md"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string", default: "Cloud Nine Baby"}
+          - {label: "Hero Subtitle", name: "hero_subtitle", widget: "string", default: "A collection to make you feel like a baby"}
+          - {label: "Featured Products Title", name: "featured_title", widget: "string", default: "Featured Products"}
+          
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.md"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string", default: "About Us"}
+          - {label: "Subtitle", name: "subtitle", widget: "string", default: "Bringing authentic Peruvian craftsmanship to families worldwide"}
+          - {label: "Our Story", name: "story", widget: "markdown"}
+          - {label: "Mission", name: "mission", widget: "markdown"}
+
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/pages/contact.md"
+        fields:
+          - {label: "Email", name: "email", widget: "string", default: "hello@cloudninebaby.com"}
+          - {label: "Phone", name: "phone", widget: "string", default: "+1 (555) 123-4567"}
+          - {label: "Location", name: "location", widget: "string", default: "Lima, Peru"}
